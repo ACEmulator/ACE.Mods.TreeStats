@@ -6,7 +6,7 @@ A TreeStats based data exporter for ACEmulator servers
 
 [![License](https://img.shields.io/github/license/acemulator/ace.mods.treestats)](https://github.com/ACEmulator/ACE.Mods.TreeStats/blob/main/LICENSE)[![GitHub last commit (main)](https://img.shields.io/github/last-commit/acemulator/ace.mods.treestats/main)](https://github.com/ACEmulator/ACE.Mods.TreeStats/commits/main)[![Windows CI](https://ci.appveyor.com/api/projects/status/4stu731gorpmcd7b/branch/main?svg=true)](https://ci.appveyor.com/project/LtRipley36706/ace-mods-treestats/branch/main)
 
-[![Download Latest Release](https://img.shields.io/github/v/release/ACEmulator/ACE.Mods.TreeStats?label=latest%20release)![GitHub Release Date](https://img.shields.io/github/release-date/acemulator/ace.mods.treestats)](https://github.com/ACEmulator/ACE.Mods.Metrics/releases/latest)
+[![Download Latest Release](https://img.shields.io/github/v/release/ACEmulator/ACE.Mods.TreeStats?label=latest%20release)![GitHub Release Date](https://img.shields.io/github/release-date/acemulator/ace.mods.treestats)](https://github.com/ACEmulator/ACE.Mods.TreeStats/releases/latest)
 
 [![GitHub All Releases](https://img.shields.io/github/downloads/acemulator/ace.mods.treestats/total?label=mod%20downloads)](https://github.com/ACEmulator/ACE.Mods.TreeStats/releases)
 
