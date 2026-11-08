@@ -35,6 +35,8 @@
         <PackageReference Include="GenHTTP.Modules.Webservices" Version="9.8.0" />
         <PackageReference Include="Lib.Harmony" Version="2.4.3" ExcludeAssets="runtime" />
         <PackageReference Include="ACEmulator.ACE.Shared" Version="1.*" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.22" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.22" />
     </ItemGroup>
 
     <ItemGroup>
