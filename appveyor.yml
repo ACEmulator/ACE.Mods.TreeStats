@@ -31,6 +31,7 @@ before_build:
 - cmd: dotnet restore
 - ps: AppVeyor\BeforeBuild.ps1
 build:
+  project: ACE.Mods.TreeStats.slnx
   verbosity: minimal
 after_build:
 - cmd: copy C:\ACE\Mods\*.zip %APPVEYOR_BUILD_FOLDER%
