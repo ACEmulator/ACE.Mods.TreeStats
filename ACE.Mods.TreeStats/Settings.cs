@@ -53,7 +53,7 @@ namespace ACE.Mods.TreeStats
         public bool OutputToConsole { get; set; } = false;
 
         /// <summary>
-        /// Enables output Emulator information including type, server and database version, and DAT iterations
+        /// Enables output of Emulator host information including type, server and database version, and DAT iterations
         /// </summary>
         public bool EnableEmulatorInfoOutput { get; set; } = true;
     }
