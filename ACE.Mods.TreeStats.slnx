@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/AppVeyor/">
+    <File Path="appveyor.yml" />
+    <File Path="AppVeyor/BeforeBuild.ps1" />
+  </Folder>
+  <Folder Name="/Root Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="appveyor.yml" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="ACE.Mods.TreeStats/ACE.Mods.TreeStats.csproj" />
+</Solution>

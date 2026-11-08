@@ -1,0 +1,52 @@
+version: 1.0.{build}
+pull_requests:
+  do_not_increment_build_number: true
+skip_tags: true
+branches:
+  only:
+    - main
+image: Visual Studio 2026
+configuration: Release
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  version_prefix: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+install:
+- cmd: >-
+    git clone -q https://github.com/ACEmulator/ACE.git C:\projects\ace
+
+    cd C:\projects\ace
+
+    git checkout -qf master
+
+    dotnet publish "C:\projects\ace\Source\ACE.Server\ACE.Server.csproj" --output C:\ACE\Server --configuration Debug --verbosity minimal
+
+    cd %APPVEYOR_BUILD_FOLDER%
+before_build:
+- cmd: dotnet restore
+- ps: AppVeyor\BeforeBuild.ps1
+build:
+  verbosity: minimal
+after_build:
+- cmd: copy C:\ACE\Mods\*.zip %APPVEYOR_BUILD_FOLDER%
+artifacts:
+- path: '**\*.zip'
+  name: release candidate
+deploy:
+- provider: GitHub
+  tag: v$(appveyor_build_version)
+  release: ACE.Mods.TreeStats - v$(appveyor_build_version)
+  description: <blockquote>  <h1><h6>automated mod build - $(APPVEYOR_REPO_COMMIT_TIMESTAMP) </blockquote>
+  auth_token:
+    secure: lGLpqex+Weod6ZiPw34RwTv999QvoSZ+imTcmYhiJWQL6XkfkVUYcqOO6pJDuAYt
+  artifact: /.*\.zip/
+  draft: true
+  prerelease: false
+  force_update: true
+  on:
+    branch: main
