@@ -56,5 +56,10 @@ namespace ACE.Mods.TreeStats
         /// Enables output of Emulator host information including type, server and database version, and DAT iterations
         /// </summary>
         public bool EnableEmulatorInfoOutput { get; set; } = true;
+
+        /// <summary>
+        /// Enables output of Characters
+        /// </summary>
+        public bool EnableCharacterService { get; set; } = true;
     }
 }

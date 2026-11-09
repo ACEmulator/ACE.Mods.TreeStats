@@ -74,6 +74,8 @@ global using GenHTTP.Modules.Layouting;
 global using GenHTTP.Modules.Practices;
 //global using GenHTTP.Modules.Reflection;
 global using GenHTTP.Modules.Security;
-//global using GenHTTP.Modules.Webservices;
+global using GenHTTP.Modules.Webservices;
 
 global using ACE.Mods.TreeStats.Controllers;
+global using ACE.Mods.TreeStats.DTOs;
+global using ACE.Mods.TreeStats.WebServices;

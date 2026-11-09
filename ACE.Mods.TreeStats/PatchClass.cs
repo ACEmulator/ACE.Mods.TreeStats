@@ -50,6 +50,9 @@ namespace ACE.Mods.TreeStats
 
                 api.AddController<WellKnownController>("/");
 
+                if (Settings.EnableCharacterService)
+                    api.AddService<CharacterService>("characters");
+
                 //if (Settings.EnableOpenAPI)
                 //    api.AddOpenApi();
 
